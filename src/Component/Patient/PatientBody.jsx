@@ -57,7 +57,7 @@ export default function PatientBody() {
   const fetchProfileData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:7001/api/user/profile", {
+      const response = await axios.get("https://arada-hospital-backend.onrender.com/api/user/profile", {
         withCredentials: true,
       });
       setPrescriptions(response.data.prescriptions || []);
@@ -73,7 +73,7 @@ export default function PatientBody() {
   const fetchBookedAppointments = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:7001/api/user/booked-appointment", {
+      const response = await axios.get("https://arada-hospital-backend.onrender.com/api/user/booked-appointment", {
         withCredentials: true,
       });
       setBookedAppointments(response.data.appointments || []);
@@ -88,7 +88,7 @@ export default function PatientBody() {
   const fetchAppointments = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:7001/api/user/appointment", {
+      const response = await axios.get("https://arada-hospital-backend.onrender.com/api/user/appointment", {
         withCredentials: true,
       });
       setAppointments(response.data.appointment || []);

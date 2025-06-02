@@ -12,7 +12,7 @@ export default function LaboratoristBody() {
   useEffect(() => {
     const fetchPatients = async () => {
       try {
-        const response = await axios.get("http://localhost:7001/api/laboratorist/patients-with-lab-requests", {
+        const response = await axios.get("https://arada-hospital-backend.onrender.com/api/laboratorist/patients-with-lab-requests", {
           withCredentials: true, // Include credentials (cookies) in the request
         });
         setPatients(response.data.patients); // Assuming the response contains a 'patients' field
@@ -40,7 +40,7 @@ export default function LaboratoristBody() {
     const { results, status, notes } = e.target.elements;
 
     try {
-      const response = await axios.put(`http://localhost:7001/api/laboratorist/${selectedPatient._id}/results`, {
+      const response = await axios.put(`https://arada-hospital-backend.onrender.com/api/laboratorist/${selectedPatient._id}/results`, {
         labRequestId: selectedPatient._id,
         results: results.value,
         status: status.value,

@@ -30,7 +30,7 @@ export default function DoctorBody() {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get("http://localhost:7001/api/doctor/getAppointment", {
+      const response = await axios.get("https://arada-hospital-backend.onrender.com/api/doctor/getAppointment", {
         withCredentials: true,
       });
       setAppointments(response.data.appointments || []);
@@ -47,7 +47,7 @@ export default function DoctorBody() {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get(`http://localhost:7001/api/doctor/getPatientData/${patientId}`, {
+      const response = await axios.get(`https://arada-hospital-backend.onrender.com/api/doctor/getPatientData/${patientId}`, {
         withCredentials: true,
       });
       setPatientData(response.data.patient);
@@ -64,7 +64,7 @@ export default function DoctorBody() {
     if (!newMedicalHistory.condition || !newMedicalHistory.treatment) return;
     try {
       const response = await axios.post(
-        "http://localhost:7001/api/doctor/addMedicalHistory",
+        "https://arada-hospital-backend.onrender.com/api/doctor/addMedicalHistory",
         {
           patientId: patientData._id,
           condition: newMedicalHistory.condition,
@@ -94,7 +94,7 @@ export default function DoctorBody() {
     if (!newPrescription.doctorName || !newPrescription.details) return;
     try {
       const response = await axios.post(
-        "http://localhost:7001/api/doctor/addPrescription",
+        "https://arada-hospital-backend.onrender.com/api/doctor/addPrescription",
         {
           patientId: patientData._id,
           doctorName: newPrescription.doctorName,
@@ -122,7 +122,7 @@ export default function DoctorBody() {
     if (!newLabRequest.testType) return;
     try {
       const response = await axios.post(
-        "http://localhost:7001/api/doctor/addLabRequest",
+        "https://arada-hospital-backend.onrender.com/api/doctor/addLabRequest",
         {
           patientId: patientData._id,
           testType: newLabRequest.testType,

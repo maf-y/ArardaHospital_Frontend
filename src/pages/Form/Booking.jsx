@@ -32,7 +32,7 @@ const Booking = () => {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:7001/api/user/book-appointment",
+        "https://arada-hospital-backend.onrender.com/api/user/book-appointment",
         formData,
         { withCredentials: true } // Ensures cookies are sent for authentication
       );

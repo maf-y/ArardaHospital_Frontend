@@ -85,7 +85,7 @@ const Form = () => {
     formDataToSend.append("bloodType", formData.bloodType);
 
     try {
-      const response = await axios.put("http://localhost:7001/api/user/updateProfile", formDataToSend, {
+      const response = await axios.put("https://arada-hospital-backend.onrender.com/api/user/updateProfile", formDataToSend, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
