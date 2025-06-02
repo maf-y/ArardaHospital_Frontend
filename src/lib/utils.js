@@ -41,6 +41,6 @@ export const getTimeSince = (dateString) => {
   return `${years} year${years === 1 ? '' : 's'} ago`;
 };
 
-export const BASE_URL = "https://arada-backk.onrender.com/api";
+export const BASE_URL = "https://arada-hospital-backend.onrender.com/api";
 
 

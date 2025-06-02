@@ -13,7 +13,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
-const BASE_URL = "https://arada-backk.onrender.com"
+const BASE_URL = "https://arada-hospital-backend.onrender.com"
 
 const LabForm = () => {
   const { id } = useParams()

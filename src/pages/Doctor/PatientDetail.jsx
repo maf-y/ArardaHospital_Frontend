@@ -7,7 +7,7 @@ import { toast } from "react-toastify"
 import { ChevronLeft, User, ClipboardList, FileText, Stethoscope, Activity, HeartPulse, Thermometer, Loader2, Play, Plus, X, Pill, FlaskConical, FileWarning, ClipboardCheck, AlertCircle, Clock, CheckCircle2 } from "lucide-react"
 import "react-toastify/dist/ReactToastify.css"
 
-const BASE_URL = "https://arada-backk.onrender.com/api/doctors"
+const BASE_URL = "https://arada-hospital-backend.onrender.com/api/doctors"
 
 // Helper function to safely format dates
 const safeFormat = (date, formatStr) => {

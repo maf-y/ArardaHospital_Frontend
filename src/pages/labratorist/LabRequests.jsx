@@ -15,7 +15,7 @@ import { format } from 'date-fns'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
-const BASE_URL = "https://arada-backk.onrender.com"
+const BASE_URL = "https://arada-hospital-backend.onrender.com"
 
 const LabRequests = () => {
   const [requests, setRequests] = useState([])

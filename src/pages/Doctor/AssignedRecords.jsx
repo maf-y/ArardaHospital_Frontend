@@ -6,7 +6,7 @@ import { Search, User, Stethoscope, Activity, ArrowRight, Loader2, AlertCircle, 
 import { toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 
-const BASE_URL = "https://arada-backk.onrender.com"
+const BASE_URL = "https://arada-hospital-backend.onrender.com"
 
 const AssignedRecords = () => {
   const [doctorInfo, setDoctorInfo] = useState(null)
