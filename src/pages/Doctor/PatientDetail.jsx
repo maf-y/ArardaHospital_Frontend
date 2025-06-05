@@ -54,7 +54,7 @@ const PatientDetail = () => {
   const fetchCentralMedicalHistory = async (id) => {
     if (!id) return
     try {
-      const historyRes = await fetch(`https://mediconnet-backend.onrender.com/api/central-history/records/${id}`, {
+      const historyRes = await fetch(`https://mediconnet-backend-9nti.onrender.com/api/central-history/records/${id}`, {
         credentials: "include",
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
